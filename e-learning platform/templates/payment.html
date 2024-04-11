@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: 400px; 
+    padding: 40px;
+    background-color: coral;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    font-size: 20px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold; 
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <h2>Course Details:</h2>
+        <p><strong>Course Name:</strong> {{ course_name }}</p>
+        <p><strong>Duration:</strong> {{ duration }}</p>
+        <p><strong>Price:</strong> ₹{{ price }}</p>
+        
+        <!-- Payment form -->
+        <form action="/payment" method="post" id="payment-form">
+            <div class="form-row">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-row">
+                <label for="expiry-date">Expiration Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-row">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit" onclick="window.location.href='/buy_course'">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

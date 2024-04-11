@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+  <header id="navbar">
+    <h1>Welcome to E-Learning Platform</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#values">Values</a></li>
+            <li><a href="#fields">Fields</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+  
+
+    <div class="container">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://www.ripemedia.com/wp-content/uploads/2020/01/elearning-instructional-design.jpeg" alt="Image 1" class="centered-image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Unlock Your Potential</h3>
+                  <p>Empower yourself with knowledge and skills to reach new heights.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <section id="about" class="py-5 text-center bg-light mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="display-4">About E-Learn</h2>
+            <p class="lead">Welcome to E-Learn, your gateway to a world of knowledge and skill-building. We are dedicated to providing high-quality online courses to help you reach your educational and professional goals. Whether you're a beginner looking to start your learning journey or a professional seeking to upgrade your skills, E-Learn has something for everyone.</p>
+            <img src="https://static.toiimg.com/thumb/msid-94473435,width-1280,height-720,resizemode-4/94473435.jpg" alt="About Us Image" class="img-fluid rounded-circle mt-4" style="max-width: 300px; height: auto;">
+            <p class="lead">E-Learn offers a wide range of courses, from programming and data science to business and marketing. Our platform is designed to make learning convenient and accessible, allowing you to study at your own pace from anywhere in the world. Join us on this educational journey and unlock your potential.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="mission" class="py-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="display-4">Our Mission</h2><br>
+            <p class="lead">At E-Learn, we are on a mission to empower learners worldwide by providing high-quality online education. Our core principles drive us:</p><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-lightbulb fa-4x text-primary mb-4"></i>
+              <h4 class="mb-3">Innovation</h4>
+              <p>We believe in continuous innovation to create engaging and effective learning experiences.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-chalkboard-teacher fa-4x text-success mb-4"></i>
+              <h4 class="mb-3">Education</h4>
+              <p>Our commitment to education is unwavering. We strive to make learning accessible to all.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-globe fa-4x text-info mb-4"></i>
+              <h4 class="mb-3">Global Reach</h4>
+              <p>We connect learners and experts from around the world, fostering a global learning community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section id="values" class="py-5 bg-light mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="display-4">Our Values</h2><br>
+            <p class="lead">Our core values guide us in everything we do:</p><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-handshake fa-4x text-primary mb-4"></i>
+              <h4 class="mb-3">Collaboration</h4>
+              <p>We value collaboration and believe in the power of working together to achieve our goals.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-heart fa-4x text-success mb-4"></i>
+              <h4 class="mb-3">Passion</h4>
+              <p>Passion drives us to create meaningful educational experiences that inspire learners.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="fas fa-balance-scale fa-4x text-info mb-4"></i>
+              <h4 class="mb-3">Equality</h4>
+              <p>We are committed to equality and ensuring access to education for all individuals, regardless of their background.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fields" class="py-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="display-4">Explore Diverse Fields</h2><br>
+            <p class="lead">We offer a wide range of courses in various technical fields:</p><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-laptop-code fa-4x text-primary"></i>
+              <h4 class="my-3">Web Development</h4>
+              <p>Learn front-end and back-end web development to build interactive websites and web applications.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-database fa-4x text-success"></i>
+              <h4 class="my-3">Data Science</h4>
+              <p>Master data analysis, machine learning, and data visualization to derive insights from data.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-cogs fa-4x text-info"></i>
+              <h4 class="my-3">Machine Learning</h4>
+              <p>Explore the world of AI, from neural networks to natural language processing.</p>
+            </div>
+          </div><br>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-robot fa-4x text-primary"></i>
+              <h4 class="my-3">Artificial Intelligence</h4>
+              <p>Explore the world of AI, from neural networks to natural language processing.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-chart-bar fa-4x text-success"></i>
+              <h4 class="my-3">Business Analytics</h4>
+              <p>Analyze business data, make informed decisions, and drive business success with analytics.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <i class="fas fa-palette fa-4x text-info"></i>
+              <h4 class="my-3">Graphic Design</h4>
+              <p>Learn the art of visual communication, graphic design, and creative expression.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2024 Your Company. All rights reserved.</p>
+              <p>Follow us on:</p>
+              <a href="https://github.com/chethan1527" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/chethan-m-n%F0%9F%9A%80-270b51201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <p><strong>Created by Chethan</strong> </p>
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
